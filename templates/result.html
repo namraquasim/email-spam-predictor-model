@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1>E-mail Spam Predictor</h1>
+        </div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Text : </b></p>
+	<div class="results">
+
+
+
+	{% if prediction == 1%}
+	<h2 style="color:red;">It is a Spam!!!!</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Its's not a Spam.</h2>
+	{% endif %}
+
+	</div>
+    <footer id="main-footer">
+    </br>
+      </br>
+      </br>
+      ML model by: <a href="https://www.linkedin.com/in/adarsh-jha-4a17221a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrpF7hgyWQOupaklMvdXwtQ%3D%3D"><img src="https://i.pinimg.com/originals/ce/09/3c/ce093c7214ad357bb665cfd2f66a8b6b.png"height = 30px width = 30px alt="logo"></a>-<span class = "name">Adarsh Jha</span>
+
+      </br>
+      Web Page by: <a href="https://www.linkedin.com/in/namra-quasim-6667141ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2F1eADXmEQ4KdV24Sqkobhg%3D%3D"><img src="https://i.pinimg.com/originals/ce/09/3c/ce093c7214ad357bb665cfd2f66a8b6b.png"height = 30px width = 30px alt="logo"></a>-<span class = "name">Namra Quasim</span>
+    </footer>
+
+</body>
+</html>

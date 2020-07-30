@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1>E-mail Spam Predictor</h1>
+
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Your Text Here </p>
+		<textarea name="text" rows="4" cols="50"></textarea>
+		<br/>
+      <p>Example: Free Money! Enter your account details. </br>Prediction: It's a Spam!!</p>
+		<input type="submit" class="btn-info" value="predict spam">
+
+	</form>
+
+	</div>
+     <footer id="main-footer">
+    </br>
+      </br>
+      </br>
+      ML model by: <a href="https://www.linkedin.com/in/adarsh-jha-4a17221a7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrpF7hgyWQOupaklMvdXwtQ%3D%3D"><img src="https://i.pinimg.com/originals/ce/09/3c/ce093c7214ad357bb665cfd2f66a8b6b.png"height = 30px width = 30px alt="logo"></a>-<span class = "name">Adarsh Jha</span>
+
+      </br>
+      Web Page by: <a href="https://www.linkedin.com/in/namra-quasim-6667141ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2F1eADXmEQ4KdV24Sqkobhg%3D%3D"><img src="https://i.pinimg.com/originals/ce/09/3c/ce093c7214ad357bb665cfd2f66a8b6b.png"height = 30px width = 30px alt="logo"></a>-<span class = "name">Namra Quasim</span>
+    </footer>
+
+
+
+</body>
+</html>
